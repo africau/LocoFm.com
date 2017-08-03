@@ -15,21 +15,21 @@
      <br>
      <br>
      <br>
-	 
-<canvas id ="myradio" height = "200" width = "100"></canvas>
+<center>	 
+<canvas id ="myradio" height = "300" width = "400" style="border:1px solid #d3d3d3;"></canvas>
 <script>
-var e = document.getElementById("myradio")
-var c= e.getContext("2d")
-var g = c.createRadialGradient(75,50,5,69,70,100)
- g.addColorStop(0,"red")
- g.addColorStop(1,"white")
+var e = document.getElementById("myradio");
+var c= e.getContext("2d");
+var g = c.createRadialGradient(65,50,5,90,70,100);
+ g.addColorStop(0,"red");
+ g.addColorStop(1,"white");
 			 
- c.fillStyle(g)
- c.fillRect(10,10,150,100)			 			  
-</script>
-			  
+ c.fillStyle = g;
+ c.fillRect(10,10,150,100);	
+ c.font="20px Georgia"
+ c.strokeText("Africa U Radio",20,70); 
+</script>	  
 
- <center>
 	  <p>
 		<h5>Radio LocoFM</h5>
 		<br>
