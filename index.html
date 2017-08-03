@@ -18,8 +18,8 @@
 	 
 <canvas id ="myradio" height = "200" width = "100"></canvas>
 <script>
-var e = getElementbyId("myradio")
-var c= e.getElementContext("2d")
+var e = document.getElementById("myradio")
+var c= e.getContext("2d")
 var g = c.createRadialGradient(75,50,5,69,70,100)
  g.addColorStop(0,"red")
  g.addColorStop(1,"white")
