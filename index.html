@@ -16,8 +16,8 @@
      <br>
      <br>
 <center>	 
-<canvas id ="myradio" height = "300" width = "400" style="border:1px solid #d3d3d3;"></canvas>
-<canvas id ="myradiog" height = "300" width = "400" style="border:1px solid #d3d3d3;"></canvas>
+<canvas id ="myradio" height = "200" width = "100" style="border:1px solid #d3d3d3;"></canvas>
+<canvas id ="myradiog" height = "200" width = "100" style="border:1px solid #d3d3d3;"></canvas>
 <script>
 var e = document.getElementById("myradio");
 var c= e.getContext("2d");
@@ -34,7 +34,7 @@ var g = c.createRadialGradient(65,50,5,90,70,100);
 var e = document.getElementById("myradiog");
 var c= e.getContext("2d");
 var g = c.createRadialGradient(65,50,5,90,70,100);
- g.addColorStop(0,"red");
+ g.addColorStop(0,"blue");
  g.addColorStop(1,"white");
 			 
  c.fillStyle = g;
