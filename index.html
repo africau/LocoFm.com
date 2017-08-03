@@ -16,8 +16,8 @@
      <br>
      <br>
 <center>	 
-<canvas id ="myradio" height = "100" width = "150" style="border:1px solid #d3d3d3;"></canvas>
-<canvas id ="myradiog" height = "100" width = "150" style="border:1px solid #d3d3d3;"></canvas>
+<canvas id ="myradio" height = "100" width = "150" draggable ="true" style="border:1px solid #d3d3d3;"></canvas>
+<canvas id ="myradiog" height = "100" width = "150"  draggable = "true" style="border:1px solid #d3d3d3;"></canvas>
 <script>
 var e = document.getElementById("myradio");
 var c= e.getContext("2d");
@@ -27,7 +27,7 @@ var g = c.createRadialGradient(65,50,5,90,70,100);
 			 
  c.fillStyle = g;
  c.fillRect(10,10,150,100);	
- c.font="20px Georgia"
+ c.font="15px Georgia"
  c.strokeText("Africa U Gospel",20,70); 
 	
 	
@@ -39,7 +39,7 @@ var g = c.createRadialGradient(65,50,5,90,70,100);
 			 
  c.fillStyle = g;
  c.fillRect(10,10,150,100);	
- c.font="20px Georgia"
+ c.font="15px Georgia"
  c.strokeText("Africa U Radio",20,70); 
 </script>	  
 
