@@ -58,36 +58,9 @@ var g = c.createRadialGradient(65,50,5,90,90,100);
  c.fillRect(5,5,300,400);	
  c.font="20px Georgia"
  c.strokeText("Radio Drop Box",20,70); 
-</script>	  
-</div>
-</center>
-    <center>
-        <style>
-         div.generic {
-             width:300px;
-             background:#43BFC7;
-             border:1px dotted black;
-             padding:8px;}
-         div.generic ul {color:red;}
-        </style>
-        <div class="generic">
-       
-        <audio controls autoplay="autoplay" ><source src="http://206.190.130.182:8094/;stream.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-          <div class="container">
-            <div id="player-instance-radio" class="jp-jplayer"></div>
-            <div class="controls jp-controls-holder">
-              <div class="play-pause jp-play pc-play"></div>
-              <div class="play-pause jp-pause fa pc-pause" style=" display:none"></div>
-            </div>
-            <div class="jp-volume-controls">
-              <button class="sound-control pc-volume jp-mute"></button>
-              <button class="sound-control pc-mute jp-unmute"></button>
-              <div class="jp-volume-bar" style="display: none;">
-                <div class="jp-volume-bar-value" style="width: 1.4737%;"></div>
-              </div>
-            </div>
-             <div>
+</script>
 <div>
+<script>
 // canvas related variables
 // references to canvas and its context and its position on the page
 var canvas = document.getElementById("canvas");
@@ -229,7 +202,37 @@ $("#canvas").mouseout(function (e) {
 function randomColor() {
     return ('#' + Math.floor(Math.random() * 16777215).toString(16));
 }	
-		     </div>
+	</script>		    
+</div>
+</div>
+</center>
+    <center>
+        <style>
+         div.generic {
+             width:300px;
+             background:#43BFC7;
+             border:1px dotted black;
+             padding:8px;}
+         div.generic ul {color:red;}
+        </style>
+        <div class="generic">
+       
+        <audio controls autoplay="autoplay" ><source src="http://206.190.130.182:8094/;stream.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+          <div class="container">
+            <div id="player-instance-radio" class="jp-jplayer"></div>
+            <div class="controls jp-controls-holder">
+              <div class="play-pause jp-play pc-play"></div>
+              <div class="play-pause jp-pause fa pc-pause" style=" display:none"></div>
+            </div>
+            <div class="jp-volume-controls">
+              <button class="sound-control pc-volume jp-mute"></button>
+              <button class="sound-control pc-mute jp-unmute"></button>
+              <div class="jp-volume-bar" style="display: none;">
+                <div class="jp-volume-bar-value" style="width: 1.4737%;"></div>
+              </div>
+            </div>
+             <div>
+
 	<div>
  <h4>Click to add a circle<br>Drag to move a circle.</h4>
 <canvas id="canvas" width=300 height=300 sdraggable ="true" style="border:1px solid #d3d3d3;" ></canvas>
